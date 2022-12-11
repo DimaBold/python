@@ -1,2 +1,1 @@
-print("jknkj")
-print("jknkj")
+import openpyxlbook = openpyxl.open("ПХ3-10.xlsx", read_only=True)sheet = book.active# print(sheet[4][2].value)for row in range(4,sheet.max_row):    Номер_вещества = sheet[row][0].value    Вещество = sheet[row][1].value    ПДК = sheet[row][2].value    Ci = sheet[row][3].value    ЛПВ = sheet[row][4].value    Класс_опасности = sheet[row][5].value    print(Номер_вещества,Вещество,ПДК,Ci,ЛПВ,Класс_опасности)
